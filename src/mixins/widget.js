@@ -14,7 +14,7 @@ export const createWidgetMixin = ({ connector } = {}) => ({
     getParentIndex: {
       from: '$_ais_getParentIndex',
       default() {
-        return () => this.instantSearchInstance.mainIndex;
+        return this.instantSearchInstance.mainIndex;
       },
     },
   },
