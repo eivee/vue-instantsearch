@@ -18,10 +18,7 @@ export default {
     },
   },
   render(createElement) {
-    const slot =
-      'default' in this.$slots
-        ? this.$slots.default
-        : this.$scopedSlots.default;
+    const slot = 'default' in this.$slots ? this.$slots.default : null;
 
     if (!this.state || !slot) {
       return null;
