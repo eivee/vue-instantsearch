@@ -55,7 +55,7 @@ Read more on using connectors: https://alg.li/vue-custom`
       );
     }
   },
-  beforeDestroy() {
+  beforeUnmount() {
     if (this.widget) {
       this.getParentIndex().removeWidgets([this.widget]);
     }

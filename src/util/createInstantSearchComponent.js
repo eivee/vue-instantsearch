@@ -52,7 +52,7 @@ export const createInstantSearchComponent = component =>
           }
         });
       },
-      beforeDestroy() {
+      beforeUnmount() {
         if (this.instantSearchInstance.started) {
           this.instantSearchInstance.dispose();
         }

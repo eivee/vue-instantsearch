@@ -28,7 +28,7 @@ export const createPanelProviderMixin = () => ({
       this.updateCanRefine(value);
     });
   },
-  beforeDestroy() {
+  beforeUnmount() {
     this.emitter.all.clear();
   },
   methods: {
